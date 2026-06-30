@@ -1,0 +1,24 @@
+{
+  "fields": [
+    { "path": "candidate_id",    "from": "candidate_id" },
+    { "path": "candidate_name",  "from": "full_name" },
+    { "path": "primary_email",   "from": "emails[0]" },
+    { "path": "all_emails",      "from": "emails" },
+    { "path": "primary_phone",   "from": "phones[0]" },
+    { "path": "city",            "from": "location.city" },
+    { "path": "region",          "from": "location.region" },
+    { "path": "country",         "from": "location.country" },
+    { "path": "headline",        "from": "headline" },
+    { "path": "top_skill",       "from": "skills[0].name" },
+    { "path": "current_company", "from": "experience[0].company" },
+    { "path": "current_title",   "from": "experience[0].title" }
+  ],
+  "include_confidence": true,
+  "include_provenance": false,
+  "include_merge_trace": false,
+  "missing_value_policy": "null",
+  "normalizations": {
+    "primary_email": "lowercase",
+    "candidate_name": "strip"
+  }
+}

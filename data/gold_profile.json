@@ -1,0 +1,12 @@
+{
+  "_note": "Ground-truth reference profile for the sample candidate. Used by tools/diff_gold.py to detect wrong-but-confident predictions.",
+  "full_name": "Yamini M K",
+  "primary_email": "yamini.0954@gmail.com",
+  "primary_phone": "+919342880954",
+  "city": "Coimbatore",
+  "region": "Tamil Nadu",
+  "country": "India",
+  "headline": "Web Development Intern | Python | React | Flask",
+  "current_company": "CodeBind Technologies",
+  "current_title": "Web Development Intern"
+}

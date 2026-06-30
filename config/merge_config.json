@@ -1,0 +1,15 @@
+{
+  "field_strategies": {
+    "full_name":  "priority_order",
+    "emails":     "priority_order",
+    "phones":     "priority_order",
+    "location":   "priority_order",
+    "headline":   "highest_confidence",
+    "links":      "priority_order",
+    "skills":     "majority_vote",
+    "experience": "priority_order",
+    "education":  "priority_order"
+  },
+  "dedup_threshold": 85,
+  "default_strategy": "priority_order"
+}

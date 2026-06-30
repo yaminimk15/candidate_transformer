@@ -1,0 +1,38 @@
+{
+  "_note": "STUB DATA — Live LinkedIn scraping violates LinkedIn ToS (section 8.2). This fixture simulates what a LinkedIn profile export would look like for the same candidate. In production, replace this with an official LinkedIn partner API integration.",
+  "full_name": "Yamini M K",
+  "headline": "Web Development Intern | Python | React | Flask",
+  "emails": ["yamini.0954@gmail.com"],
+  "phones": [],
+  "location": {
+    "city": "Coimbatore",
+    "region": "Tamil Nadu",
+    "country": "India"
+  },
+  "links": [
+    "https://www.linkedin.com/in/yamini-mk",
+    "https://github.com/yamini-mk"
+  ],
+  "skills": [
+    "Python", "Flask", "React", "JavaScript", "HTML", "CSS",
+    "MySQL", "Git", "GitHub", "REST APIs"
+  ],
+  "experience": [
+    {
+      "company": "CodeBind Technologies",
+      "title": "Web Development Intern",
+      "start_date": "Jan 2024",
+      "end_date": "Jun 2024",
+      "summary": "Built full-stack web applications using Flask and React. Integrated REST APIs and MySQL database."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Rathinam Technical Campus",
+      "degree": "B.E.",
+      "field": "Computer Science and Engineering",
+      "start_date": "2021",
+      "end_date": "2025"
+    }
+  ]
+}
