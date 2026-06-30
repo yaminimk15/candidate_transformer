@@ -8,7 +8,7 @@ A Python and Streamlit application that extracts, normalizes, merges, and transf
 
 ## GitHub Repository
 
-https://github.com/yaminimk15/Candidate-Data-Transformer
+https://github.com/yaminimk15/candidate_transformer
 
 ---
 
