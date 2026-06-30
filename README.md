@@ -1,36 +1,27 @@
 # Multi-Source Candidate Data Transformer
 
-A Streamlit-based application that transforms candidate information from multiple sources such as resumes, recruiter CSVs, and configuration files into a unified canonical candidate profile with confidence scoring, provenance tracking, and configurable data projection.
+A Python and Streamlit application that extracts, normalizes, merges, and transforms candidate information from multiple sources (Resume PDF, Recruiter CSV, and JSON configuration) into a unified canonical candidate profile.
+
+## Live Demo
+
+**Application:** https://candidatetransformer-profileanlayzer.streamlit.app/
+
+## GitHub Repository
+
+https://github.com/yaminimk15/Candidate-Data-Transformer
 
 ---
 
 ## Features
 
-- Upload Resume (PDF)
-- Upload Recruiter CSV
-- Upload Projection Configuration (JSON)
-- Extract candidate details from multiple sources
-- Normalize candidate information
-- Merge candidate data using configurable merge strategies
-- Confidence scoring for extracted fields
-- Provenance tracking for every extracted field
+- Resume PDF parsing
+- Recruiter CSV processing
+- Candidate profile generation
+- Data normalization
+- Confidence scoring
+- Provenance tracking
+- JSON output generation
 - Configurable projection layer
-- JSON Schema validation
-- Data quality reporting
-- Download final candidate profile as JSON
-
----
-
-## Tech Stack
-
-- Python 3
-- Streamlit
-- Pandas
-- PyPDF2
-- RapidFuzz
-- phonenumbers
-- python-dateutil
-- JSON Schema
 
 ---
 
@@ -40,18 +31,6 @@ A Streamlit-based application that transforms candidate information from multipl
 Candidate-Data-Transformer/
 │
 ├── app/
-│   ├── confidence/
-│   ├── constants/
-│   ├── extractors/
-│   ├── merger/
-│   ├── models/
-│   ├── normalizers/
-│   ├── projection/
-│   ├── reporting/
-│   ├── services/
-│   ├── ui/
-│   └── validators/
-│
 ├── config/
 ├── data/
 ├── tests/
@@ -61,68 +40,21 @@ Candidate-Data-Transformer/
 
 ---
 
-## How It Works
-
-```
-Resume PDF
-      │
-Recruiter CSV
-      │
-Projection Config
-      │
-      ▼
-Data Extraction
-      ▼
-Normalization
-      ▼
-Merge & Deduplication
-      ▼
-Confidence & Provenance
-      ▼
-Projection
-      ▼
-Schema Validation
-      ▼
-Canonical Candidate Profile
-```
-
----
-
 ## Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/Candidate-Data-Transformer.git
+git clone https://github.com/yaminimk15/Candidate-Data-Transformer.git
 ```
 
-Navigate to the project folder:
+Navigate to the project:
 
 ```bash
 cd Candidate-Data-Transformer
 ```
 
-Create a virtual environment:
-
-```bash
-python -m venv venv
-```
-
-Activate it:
-
-### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-### Linux/macOS
-
-```bash
-source venv/bin/activate
-```
-
-Install dependencies:
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
@@ -136,21 +68,27 @@ pip install -r requirements.txt
 streamlit run app/ui/streamlit_app.py
 ```
 
+The application will open in your browser at:
+
+```
+http://localhost:8501
+```
+
 ---
 
-## Input Files
+## Sample Inputs
 
-- Resume (PDF)
+- Resume PDF
 - Recruiter CSV
 - Projection Configuration (JSON)
 
 ---
 
-## Output
+## Sample Output
 
 The application generates a canonical candidate profile in JSON format containing:
 
-- Candidate Information
+- Personal Information
 - Skills
 - Experience
 - Education
@@ -160,25 +98,26 @@ The application generates a canonical candidate profile in JSON format containin
 
 ---
 
-## Assignment Highlights
+## Testing
 
-- Multi-source candidate data transformation
-- Configurable merge strategies
-- Runtime projection layer
-- Confidence scoring
-- Explainable provenance tracking
-- Schema validation
-- Production-style data quality reporting
+Run the test suite using:
+
+```bash
+pytest
+```
 
 ---
 
-## Future Improvements
+## Technologies Used
 
-- LinkedIn API integration
-- OCR support for scanned resumes
-- REST API
-- Docker deployment
-- AI-powered skill extraction
+- Python
+- Streamlit
+- Pandas
+- PDFPlumber
+- BeautifulSoup
+- RapidFuzz
+- phonenumbers
+- JSON Schema
 
 ---
 
@@ -187,7 +126,3 @@ The application generates a canonical candidate profile in JSON format containin
 **Yamini M K**
 
 GitHub: https://github.com/yaminimk15
-
----
-
-Developed as part of the **Eightfold AI Engineering Intern Assignment**.
